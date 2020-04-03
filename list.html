@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>La Cantina</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script rel="javascript" type="application/javascript" src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/vue-js/vue.js" type="application/javascript"></script>
+    <script src="js/node_modules/axios/dist/axios.min.js" type="application/javascript"></script>
+    <script src="js/app.js" type="application/javascript"></script>
+</head>
+
+<body id="listing">
+    <header>
+        <nav class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 nav-logo">
+                    <img src="img/logo.png" class="logo-img-nav">
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 nav-link">
+                    <a href="index.html">Accueil</a>
+                    <a href="#" class="current">Nos recettes</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-background row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 place-main-title">
+                <h1>Les recettes</h1>
+            </div>
+        </div>
+
+
+    </header>
+
+    <section>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h2 class="recette-big">Profitez de nos recettes !</h2>
+            <div class="listing">
+                <div id="app">
+                    <div
+                        v-for="r in listing"
+                        class="currency"
+                    >
+                        <div class="row">
+                            <article class="col-xs-12 col-sm-10 col-md-9 col-lg-9 list-filt">
+                                <a href="#" class="link-page"></a>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 list-img">
+                                        
+                                            <img :src="r.photo" class="image-in-block">
+                                        
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 list-txt">
+                                        <div class="recip">
+                                            <div class="rec-top"><h3 class="title-rec">{{ r.titre }}</h3><p class="who">{{ r.autor }}</p></div>
+                                            <p class="desc">{{ r.description }}</p>
+                                            <div class="info-rec">
+                                                <div class="side-one">
+                                                    <img src="img/personne.png" class="nb-pers">
+                                                    <p>{{ r.personnes }}</p>
+                                                </div>
+                                                <div class="side-two">
+                                                    <img src="img/clock.png" class="time">
+                                                    <p>{{ r.tempsPreparation }} min</p>
+                                                </div>
+                                                <div class="side-three">
+                                                    <img src="img/difficulty.png" class="hardness">
+                                                    <p>{{ r.niveau }}</p>
+                                                </div>
+                                            </div>
+                                            <!--
+                                            <div class="steps">
+                                                <p>Step 1 : Insérez la première étape</p>
+                                                <p>Step 2 : Insérez la première étape</p>
+                                                <p>Step 3 : Insérez la première étape</p>
+                                                <p>Step 4 : Insérez la première étape</p>
+                                            </div>
+                                            -->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <section>
+        <div >
+
+            <div>
+            
+                <div
+                  v-for="r in listing"
+                  class="currency"
+                >
+                  {{ r.titre }}:
+                    <span>{{ r.titre }}</span>
+                
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+    </footer>
+</body>
+
+
+</html>

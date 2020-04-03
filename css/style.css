@@ -1,0 +1,435 @@
+/* GENERAL CALL */
+@font-face {
+    font-family: 'Chapaza';
+    src: url('../font/Chapaza-Regular.eot');
+    src: url('../font/Chapaza-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Chapaza-Regular.woff2') format('woff2'),
+        url('../font/Chapaza-Regular.woff') format('woff'),
+        url('../font/Chapaza-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Klarissa';
+    src: url('../font/Klarissa.eot');
+    src: url('../font/Klarissa.eot?#iefix') format('embedded-opentype'),
+        url('../font/Klarissa.woff2') format('woff2'),
+        url('../font/Klarissa.woff') format('woff'),
+        url('../font/Klarissa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Keep Calm Med';
+    src: url('../font/KeepCalm-Medium.eot');
+    src: url('../font/KeepCalm-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/KeepCalm-Medium.woff2') format('woff2'),
+        url('../font/KeepCalm-Medium.woff') format('woff'),
+        url('../font/KeepCalm-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+header{
+    overflow: hidden;
+}
+
+
+
+
+
+.logo-img-nav{
+    width: 70px;
+}
+nav{
+    box-shadow: 0px 0px 8px 1px #c8cfc8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 80px;
+    position: fixed !important;
+    z-index: 99;
+    background-color: #ffffff;
+}
+.nav-logo{
+    text-align: center;
+}
+.nav-link{
+    text-align: right;
+    padding-top: 20px;
+}
+.nav-link a{
+    font-family: 'Keep Calm Med';
+    font-size: 14px;
+    color: #000000;
+    font-weight: normal;
+    font-style: normal;
+    padding: 15px 10px 5px 10px ;
+    border-bottom: 0px solid #000000;
+    transition: all 0.1s;
+}
+.nav-link a:hover{
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+
+}
+.current{
+    border-bottom: 1px solid #000000 !important;
+}
+.header-background{
+    height: 90vh;
+    background-image: url('../img/slider1.jpg');
+    backdrop-filter: blur(100px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place-main-title{
+    height: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+.dustcrepe{
+    background-image: url('../img/dustcrepe.jpg');
+}
+
+
+
+/* HOME HEADER TEXT */
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-family: 'Klarissa';
+    font-size: 90px;
+}
+
+/* ALL */
+h2{
+    font-family: 'Klarissa';
+    font-size: 35px;
+    color: #2E2E2E;
+    padding-bottom: 40px;
+    display: inline-block;
+}
+h2::before{
+    content: url("../img/bf-title-fix.png");
+    width: 30px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+h2.full-central{
+    font-family: 'Klarissa';
+    font-size: 35px;
+    color: #2E2E2E;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+h2.full-central::before{
+    content: url("../img/bf-title-central.png");
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 16px;
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+}
+h2.title-rec-single{
+    font-family: 'Klarissa';
+    font-size: 35px;
+    color: #2E2E2E;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+}
+h2.title-rec-single::before{
+    content: url("../img/bf-title-central.png");
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 16px;
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+}
+p{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: #2E2E2E;
+}
+.bloc-central p{
+    text-align: center;
+}
+.bloc-central a{
+    margin-top: 2rem;
+}
+.cta-creer{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: #e40000 !important;
+    padding: 15px 30px 15px 30px;
+    background-color: rgba(255, 250, 213, 0.8);
+    border: 1px solid #e40000;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.cta-creer:hover{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: white !important;
+    background-color: #e40000;
+    text-decoration: none;
+}
+.background1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/food-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.background4{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/food-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+.background3{
+    background-color: rgba(255, 250, 213, 0.8) /*rgba(224, 205, 169, 0.8)*/;
+    padding: 100px 50px 100px 50px;
+    position: relative;
+}
+.background2{
+    padding: 100px 50px 100px 50px;
+    position: relative;
+}
+.background-full{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../img/food-3-reduce.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bloc-central{
+    background-color: #ffffff;
+    margin: auto;
+    padding: 50px 30px;
+}
+.cta-central{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: #e40000 !important;
+    padding: 15px 30px 15px 30px;
+    background-color: #ffffff;
+    border: 1px solid #e40000;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.cta-central:hover{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: white !important;
+    background-color: #e40000;
+    text-decoration: none;
+}
+.list-filt{
+    margin: 20px auto 0px auto;
+    position: relative;
+    transition: all 0.5s ease ;
+}
+.link-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.list-img{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.list-img img{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.list-filt:hover{
+    box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.side-one,.side-two,.side-three,.side-four{
+    display: inline-block;
+    margin-right: 20px;
+}
+.side-one img , .side-one p{
+    display: inline-block;
+}
+.side-two img , .side-two p{
+    display: inline-block;
+}
+.side-three img , .side-three p{
+    display: inline-block;
+}
+.side-one img , .side-two img , .side-three img{
+    width: 20px;
+}
+.title-rec{
+    font-family: 'Klarissa';
+    font-size: 25px;
+    color: #2E2E2E;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.info-rec{
+    padding-bottom: 20px;
+}
+h2.recette-big{
+    font-family: 'Klarissa';
+    font-size: 35px;
+    color: #2E2E2E;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+h2.recette-big::before{
+    content: url("../img/bf-title-central.png");
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 16px;
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 40px;
+}
+.rec-single-detail{
+    text-align: center;
+}
+.cta-back-recip{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: #e40000 !important;
+    padding: 15px 30px 15px 30px;
+    background-color: #ffffff;
+    border: 1px solid #e40000;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.cta-back-recip:hover{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: white !important;
+    background-color: #e40000;
+    text-decoration: none;
+}
+.back-to{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.desc{
+    overflow: hidden;
+    position: relative;
+    line-height: 1.5em;
+    height: 3em;
+    text-align: left;
+    padding-right: 2em;
+}
+.desc:before {
+    content: '[...]';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.desc:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 2em;
+    height: 3em;
+    margin-top: 0.2em;
+    background: white;
+}
+/*
+.side-four a{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: #e40000 !important;
+    padding: 15px 30px 15px 30px;
+    background-color: #ffffff;
+    border: 1px solid #e40000;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 150px;
+    height: 55px;
+}
+.side-four a:hover{
+    font-family: 'Keep Calm Med';
+    font-size: 15px;
+    color: white !important;
+    background-color: #e40000;
+    text-decoration: none;
+}
+.side-one , .side-two , .side-three{
+    margin-top: 10px;
+}
+*/
+/*
+.background2::before{
+    content: '';
+    display: block;
+    width: 225px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 250, 213, 0.8);
+    top: 0;
+    right: 100%;
+}
+.background3::before{
+    content: '';
+    display: block;
+    width: 225px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 250, 213, 0.8);
+    top: 0;
+    left: 100%;
+}
+
+.block-image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+.image-in-block{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1;
+}
+*/
